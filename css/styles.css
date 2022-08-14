@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+:root{
+    --white: rgb(138, 138, 138);
+    --black:#272727;
+    --name_width:40%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+html{
+    padding: 0;
+    margin: 0;
+    /* border:2px solid rgb(0, 48, 4); */
+}
+
+
+body{
+    /* border:2px solid red; */
+    padding: 0;
+    margin: 0;
+    background-color: var(--black);
+    color: #ffd500;
+    font-family: 'Inter', sans-serif;
+}
+
+body>*{
+    padding:0 3%;
+    /* border:2px solid lawngreen; */
+}
+
+
+
+/* header style*/
+
+header{
+    display: block;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    background-color: #343333;
+}
+
+header h1{
+    text-align: center;
+    font-size: 2.0em;
+}
+
+header nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin:0;
+    padding: 0;
+}
+
+header nav ul li{
+    list-style-type: none;
+    text-align: center;
+    width: 100%;
+    margin-top:4vh;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+    display: block;
+    padding: 2%;
+    margin: 0 8vh;
+    transition: 1s;
+}
+
+header .img-intro{
+    display: flex;
+    flex-wrap: wrap;
+    margin:15% auto 10% auto;
+    /* border:1px solid rgb(128, 0, 0); */
+
+}
+
+header .img-intro .profile-pic{
+    width:80%;
+    margin: 0 auto 0 auto;
+    transition: width 1s;
+    /* border:1px solid rgb(60, 128, 0); */
+}
+
+
+header .img-intro .profile-pic img{
+    display: block;
+    width: 100%;
+}
+
+header .img-intro .intro{
+    margin:0;
+    margin-top:7%;
+    width:100%;
+    /* border:1px solid navy; */
+
+}
+
+header .img-intro .intro p{
+    text-align: center;
+    font-size: 1em;
+    padding: 2%;
+}
+
+header .img-intro .intro p span#hello{
+    font-size: xx-large;
+}
+
+
+
+
+/* portfolio style */
+
+
+.portfolio>*{
+    width: 100%;
+    /* border: 1px solid saddlebrown; */
+}
+
+.portfolio h2{
+    margin: 20% auto 10% auto;
+    text-align: center;
+}
+
+.portfolio .container{
+    display: flex;
+    flex-wrap: wrap;
+    padding:0 2%;
+}
+
+.portfolio .container>*{
+    position: sticky;
+    top:3%;
+    width:100%;
+    margin: 6% auto 2% auto;
+    background-color: #292828;
+    padding: 3% 0;
+    /* border:1px solid firebrick; */
+}
+
+.portfolio .container .project img{
+    width: 100%;
+}
+
+.portfolio .container .project .title{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 200;
+    color:#e7d98f;
+}
+
+.portfolio .container .project .description{
+    text-align: center;
+}
+
+
+
+
+/* Footer style */
+
+
+footer{
+    display: block;
+    overflow: hidden;
+    background-color: #343333;
+}
+
+footer .line{
+    padding-top:8vh;
+    border-bottom: 2px solid white;
+}
+
+footer .contact{
+    text-align: center;
+    margin:6vh auto;
+}
+
+footer .container{
+    margin:0;
+    /* border:2px solid rebeccapurple; */
+    padding-left: 2%;
+}
+
+footer .container>div{
+    margin-bottom: 3vh;
+}
+
+footer .container .socials ul{
+    display: flex;  
+    list-style: none; 
+    /* border:2px solid black; */
+    justify-content: flex-start;
+    margin:0;
+    padding: 0;
+}
+
+
+footer .container .socials ul li:not(:last-child){
+    margin-right: 1.5vh;
+}
+
+footer .container .socials ul li a{
+    --icon-square:8vh   ;
+    /* border:0.5px solid rgb(0, 255, 26); */
+    display: block;
+    width:var(--icon-square);
+    height:var(--icon-square);
+}
+
+footer .container .socials ul li a.linkedin{
+    background: url(../icons/linkedin_icon_golden.svg) no-repeat center;
+    background-size: contain;
+    transition: 0.5s;
+}
+
+footer .container .socials ul li a.linkedin:hover{
+    background: url(../icons/linkedin_icon_white.svg) no-repeat center;
+    background-size: contain;   
+}
+
+footer .container .socials ul li a.artstation{    
+    background: url(../icons/ArtStation-logomark-dark_golden.svg) no-repeat center ;
+    background-size: contain;
+    transition: 0.5s;
+}
+
+footer .container .socials ul li a.artstation:hover{    
+    background: url(../icons/ArtStation-logomark-dark_white.svg) no-repeat center ;
+    background-size: contain;
+}
+
+footer .container .socials ul li a.instagram{    
+    background: url(../icons/instagram_icon_golden.svg) no-repeat center ;
+    background-size: contain;
+    transition: 0.5s;
+}
+
+footer .container .socials ul li a.instagram:hover{    
+    background: url(../icons/instagram_icon_white.svg) no-repeat center ;
+    background-size: contain;
+}
+
+footer .container .socials ul li a.mail{    
+    background: url(../icons/mail_icon_golden.svg) no-repeat center ;
+    background-size: contain;
+    transition: 0.5s;
+}
+
+footer .container .socials ul li a.mail:hover{    
+    background: url(../icons/mail_icon_white.svg) no-repeat center ;
+    background-size: contain;
+}
+
+footer .container .keep-in-touch{
+    font-size:2.5em;
+    text-align: left;
+    color:white;
+}
+
+footer .container address{
+    text-align: left;
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+footer .down{
+    margin-bottom: 2vh;
+}
+
+footer .bottom{
+    padding:3vh 0vh;
+    display: flex;
+    /* border:2px solid rgb(161, 15, 181); */
+    width:100%;
+    font-size: 0.9em;
+}
+
+footer .bottom .name, footer .bottom .back{
+    /* border:2px solid rgb(203, 203, 30); */
+    width:50%;
+}
+
+footer .bottom .back a{
+    float:right;
+    text-decoration: none;
+    color:#ffd500;
+    /* border: 2px solid aquamarine; */
+}
+
+footer .bottom .back a:hover{
+    color:white;
+    /* border: 2px solid aquamarine; */
+}
+
+footer .bottom .back .invisible{
+    display: none;
+    /* border: 2px solid aquamarine; */
+}
+
+
+/* Tablet version*/
+@media screen and (min-width:767px) {
+    #break{
+        display: none;
+    }
+    header nav{
+        margin:auto 5vh;
+    }
+    header nav ul li{
+        width:33%;
+    }
+
+    header nav ul li a{
+        background-color: #343333;
+        color:white;
+    }
+
+    header .img-intro{
+        margin-top:10%;
+        margin-bottom:5%;
+        /* border: 1px solid blue; */
+        flex-wrap: nowrap;
+    }
+
+    header .img-intro>*{
+        align-self: center;
+        margin:auto 0;
+        /* border: 1px solid blue; */
+    }
+
+    header .img-intro .profile-pic{
+        /* border:1px solid aqua; */
+        order:2;
+        margin-left:8%;
+    }
+
+    header .img-intro .intro{
+        order:1;
+        display: block;
+        /* border:1px solid aqua; */
+        margin: 0;
+        padding: 0;
+    }
+
+    .portfolio h2{
+        margin-bottom: 5%;
+    }
+
+    .portfolio .container>*{
+        width:50%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    footer .container .socials ul{
+        justify-content: center;
+    }
+
+    footer .container .keep-in-touch{
+        font-size: 5em;
+        text-align: center;
+    }
+
+    footer .container address{
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    footer .bottom{
+        /* padding-top:4vh; */
+        font-size: 1.2em;
+    }
+
+    footer .bottom .back{
+        display: flex;
+        justify-content: flex-end;
+    }
+    footer .bottom .back>*{
+        margin-left:8%;
+    }
+
+    footer .bottom .back .invisible{
+        display: block;
+    }
+    footer .bottom .back .visible{
+        display: none;
+    }
+}
+
+
+/*desktop version*/
+
+@media screen and (min-width:1024px) {
+    #break{
+        display: none;
+    }
+    header{
+        padding-left:4%;
+        padding-right:4%;
+    }
+    header h1{
+        float:left;
+        width:var(--name_width);
+        /* border: 1px solid orange; */
+    }
+    header nav{
+        float:left;
+        margin-top:3vh;
+        margin-left:20%;
+        margin-right:0;
+        width:var(--name_width);
+        /* border: 1px solid orange; */
+    }
+
+    header nav ul{
+        justify-content: flex-end;
+    }
+    header nav ul li{
+        width:auto;
+        margin-left:10%;
+        margin-top:2vh;
+    }
+    header nav ul li a{
+        font-size:1.1em;
+        margin: 0;
+    }
+
+    header nav ul:hover li a{
+        transform: scale(1.5);
+        opacity: 0.2;
+        filter: blur(5px);
+    } 
+
+    header nav ul li a:hover{
+        transform: scale(2);
+        opacity: 1;
+        filter: blur(0px);
+        cursor: pointer;
+    }
+    .portfolio h2{
+        margin-top:10vh;
+    }
+
+    .portfolio .container>*{
+        width:33%;
+        position:static;
+    }
+        
+}
